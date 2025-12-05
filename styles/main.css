@@ -1,13 +1,22 @@
 .start-panel {
-
+    display: grid;
+    grid-template-columns: 50px 200px 1fr;
 }
 .start-panel__icons {
-
+    display: grid;
+    grid-template-rows: 1fr repeat(5, 50px);
 }
 .start-panel__grid {
-
+    display: grid;
+    grid-template-areas: 
+    "OFFICE ZÁBAVA"
+    "INTERNET ZÁBAVA"
+    ;
+    grid-gap: 5px;
 }
+
 .apps--office {
+    display: grid;
 
 }
 .apps--web {
@@ -20,13 +29,17 @@
 
 }
 .app--g2x2 {
-
+    grid-column: span 2;
+    grid-row: span 2;
 }
 .app--g2x1 {
-
+    grid-column: span 2;
+    grid-row: span 1;
 }
 .app--g1x2 {
-
+    grid-column: span 1;
+    grid-row: span 2;
+    
 }
 .app--off-3 {
 
